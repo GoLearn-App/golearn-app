@@ -1,0 +1,105 @@
+@import url('https://fonts.cdnfonts.com/css/garet');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg-color: #e0e0e0;
+    --main-color: #03b32e;
+    --second-color: #03a52b;
+    --font-color: #231f20;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    /*background-color: #dddddd;*/
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: #fafafa;
+    width: 16rem;
+    height: 100vh;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+    background-color: var(--bg-color);
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+}
+
+main {
+    flex: 1;
+    padding: 2rem;
+    color: #1f2027;
+    flex-direction: column;
+}
+
+.sidebar-top {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-top .logo {
+    width: 12rem;
+    margin: 0 2rem;
+}
+
+.shrink-btn {
+    position: absolute;
+    top: 2rem;
+    height: 27px;
+    padding: 0 0.3rem;
+    cursor: pointer;
+    box-shadow: 0 3px 10px -3px rgba(70, 46, 118, 0.3);
+    right: 0;
+    pointer-events: none;
+    transition: 0.3s;
+    font-size: 2rem;
+    opacity: 0;
+}
+
+.shrink-btn i {
+    line-height: 27px;
+    transition: 0.3s ease;
+}
+
+.shrink-btn i:hover{
+    color: var(--second-color);
+}
+
+nav:hover .shrink-btn,
+.shrink-btn.hovered {
+    transform: translateY(-50%) translateX(0px);
+    opacity: 1;
+    pointer-events: all;
+}
+
+.sidebar-links ul {
+    position: relative;
+}
+
+.sidebar-links li {
+    position: relative;
+    padding: 2.5px 0;
+}
+
+.sidebar-links a {
+    color: var(--font-color);
+    font-weight: 400;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    height: 53px;
+}
