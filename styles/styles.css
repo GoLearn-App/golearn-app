@@ -21,31 +21,29 @@ a {
 
 nav {
     /*background-color: #dddddd;*/
-    position: sticky;
+    position: fixed;
     top: 0;
     left: 0;
     background-color: #fafafa;
     width: 16rem;
-    height: 100vh;
-    box-shadow: 4px -2px 6px 0px rgba(0,0,0,0.44);
-}
+    height: 100vw;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  }
 
 body {
     font-family: "Poppins", sans-serif;
-    overflow-x: hidden;
     background-color: var(--bg-color);
-    min-height: 100vh;
-    position: relative;
-    display: flex;
 }
 
-main {
-    flex: 1;
-    padding: 2rem;
-    color: #1f2027;
-    flex-direction: column;
-    align-content: center;
-    
+.dashboard {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 7rem 7%;
+  color: #1f2027;
+  text-align: center;
+  justify-content: center;
 }
 
 .sidebar-top {
@@ -65,7 +63,6 @@ main {
     height: 27px;
     padding: 0 0.3rem;
     cursor: pointer;
-    box-shadow: 0 3px 10px -3px rgba(70, 46, 118, 0.3);
     right: 0;
     pointer-events: none;
     transition: 0.3s;
@@ -99,6 +96,10 @@ nav:hover .shrink-btn,
     padding: 2.5px 0;
 }
 
+.sidebar-links li:hover {
+  color: var(--main-color);
+}
+
 .sidebar-links a {
     color: var(--font-color);
     font-weight: 400;
@@ -107,40 +108,46 @@ nav:hover .shrink-btn,
     align-items: center;
     height: 53px;
 }
-.wrapper{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    
-}
 
-.wrapper i {
-    font-size: 8rem;
-    color: var(--main-color);
-    transition: all .3s ease;
-    border: 1px solid var(--main-color);
-    padding: 30px;
-    border-radius: 50%;
-    margin: 15px;
-    cursor: pointer;
-}
-
-.wrapper i:hover{
-    color: var(--second-color);
-    cursor: pointer;
+.sidebar-links i {
+  font-size: 2rem;
+  padding: 15px;
 }
 
 .iconSelect {
-    width: 50%;
-    display: inline-flex;
-    flex-direction: column;
     text-align: center;
+    align-content: center;
+}
+
+.iconSelect i {
+  font-size: 8rem;
+  color: var(--font-color);
+  transition: all .3s ease;
+  border: 1px solid var(--font-color);
+  padding: 30px;
+  border-radius: 50%;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.iconSelect i:hover {
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+  cursor: pointer;
 }
 
 .sidebar-footer {
-    position: relative;
+    display: flex;
     margin-top: 2rem;
+    height: 40vh;
+    padding: 1.3vh;  
   }
-  
+
+  .teste {
+    display: flex;
+    align-items: flex-end;
+  }
+
   .account {
     display: flex;
     align-items: center;
@@ -209,8 +216,9 @@ nav:hover .shrink-btn,
     border-radius: 10px;
     margin: 0 0.65rem;
     transition: color 0.3s;
+    padding-left: 2rem;
   }
   
   .log-out:hover {
-    color: #fff;
+    color: var(--main-color);
   }
