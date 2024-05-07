@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,35 +9,76 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>GoLearn</title>
 </head>
+
 <body>
     <nav>
         <div class="sidebar-top">
             <span class="shrink-btn">
                 <i class="bx bx-menu"></i>
             </span>
-            <img src="/assets/images/logo.svg" class="logo" alt=""/>
+            <img src="/assets/images/logo.svg" class="logo" alt="" />
             <a href="#home">
                 <img src="" class="user-avatar" alt="">
             </a>
         </div>
         <div class="sidebar-links">
             <ul>
-                <li><a href="">Dashboard</a></li>
-                <li><a href="">Messages</a></li>
-                <li><a href="">Analytics</a></li>
-                <li><a href="">Tasks</a></li>
-                <li><a href="">Help</a></li>
-                <li><a href="">Settings</a></li>
-                <li><a href="">Exit</a></li>
+                <li> <a href=""> <i class='bx bxs-dashboard'></i> </i>Dashboard</a> </li>
+                <li><a href=""> <i class='bx bx-chat'> </i>Messages</a> </li>
+                <li><a href=""> <i class='bx bx-dna'> </i>Analytics</a></li>
+                <li><a href=""> <i class='bx bx-task'> </i>Tasks</a> </li>
+                <li><a href=""> <i class='bx bx-help-circle' > </i>Help</a></li>
+                <li><a href=""> <i class='bx bx-cog' > </i>Settings</a></li>
             </ul>
         </div>
-        
+
+        <div class="sidebar-footer">
+            <div class="admin-user tooltip-element">
+              <div class="admin-profile hide">
+                <img src="/assets/images/face-1.png" alt="">
+                <div class="admin-info">
+                  <h3>Jorgeeee</h3>
+                  <h5>Professor</h5>
+                </div>
+              </div>
+              <a href="#" class="log-out">
+                <i class='bx bx-log-out'></i>
+              </a>
+            </div>
+
     </nav>
 
     <main>
         <H1>Dashboard</H1>
+        <div class="wrapper">
+            <div class="iconSelect">
+                <i class='bx bx-book-bookmark'></i>
+                Materiais
+            </div>
+            <div class="iconSelect">
+                <i class='bx bxs-movie-play'></i>
+                Aulas
+            </div>
+            <div class="iconSelect">
+                <i class='bx bxs-calendar'></i>
+                Calendário
+            </div>
+            <div class="iconSelect">
+                <i class='bx bx-folder-open'></i>
+                Conteúdos
+            </div>
+            <div class="iconSelect">
+                <i class='bx bxs-comment-check'></i>
+                To-Do
+            </div>
+            <div class="iconSelect">
+                <i class='bx bxs-spreadsheet'></i>
+                Tarefas
+            </div>
+        </div>  
     </main>
-
-    <script src="app.js"></script>
+    
+        <script src="app.js"></script>
 </body>
+
 </html>
