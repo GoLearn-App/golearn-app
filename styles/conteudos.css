@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+.container {
+    padding: 20px;
+}
+
+h1 {
+    color: #0f0;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 36px;
+}
+
+.semester {
+    margin-bottom: 20px;
+}
+
+.semester-header {
+    background-color: #333;
+    color: #0f0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.semester-content {
+    margin-top: 10px;
+    display: none;
+}
+
+.semester-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.semester-content th, .semester-content td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.semester-content th {
+    background-color: #333;
+    color: #fff;
+}
+
+.semester-content td {
+    background-color: #fff;
+}
+
+.semester-content .code {
+    background-color: #eee;
+    padding: 3px 5px;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.arrow {
+    font-size: 18px;
+    color: #0f0;
+}
+
+/* Show the first semester content by default */
+.semester:nth-child(1) .semester-content {
+    display: block;
+}

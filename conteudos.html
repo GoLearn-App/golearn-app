@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/conteudos.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">Minha Logo</div>
+        <div class="search-container">
+            <input type="text" placeholder="Pesquisar...">
+            <button type="submit">🔍</button>
+        </div>
+    </header>
+
+    <nav>
+        <div class="sidebar-top">
+            <span class="shrink-btn">
+                <i class="bx bx-menu"></i>
+            </span>
+            <img src="assets/images/logo.svg" class="logo" alt="" />
+            <a href="#home">
+                <img src="" class="user-avatar" alt="">
+            </a>
+        </div>
+        <div class="sidebar-links">
+            <ul>
+                <li> <a href=""> <i class='bx bxs-dashboard'></i> </i>Dashboard</a> </li>
+                <li><a href=""> <i class='bx bx-chat'> </i>Messages</a> </li>
+                <li><a href=""> <i class='bx bx-dna'> </i>Analytics</a></li>
+                <li><a href=""> <i class='bx bx-task'> </i>Tasks</a> </li>
+                <li><a href=""> <i class='bx bx-help-circle'> </i>Help</a></li>
+                <li><a href=""> <i class='bx bx-cog'> </i>Settings</a></li>
+            </ul>
+        </div>
+
+        <div class="sidebar-footer">
+            <div class="teste">
+                <div class="admin-user tooltip-element">
+                    <div class="admin-profile hide">
+                        <img src="assets/images/face-1.png" alt="">
+                        <div class="admin-info">
+                            <h3>Jorge</h3>
+                            <h5>Professor</h5>
+                        </div>
+                    </div>
+                    <a href="#" class="log-out">
+                        <i class='bx bx-log-out'></i>
+                    </a>
+                </div>
+            </div>
+
+    </nav>
+    <section class="conteudos">
+        <div class="container">
+            <h1>Conteúdos</h1>
+            <div class="semester">
+                <div class="semester-header">
+                    <h2>1º Semestre</h2>
+                    <span class="arrow">⮟</span>
+                </div>
+                <div class="semester-content">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Disciplina</th>
+                                <th>Professor</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Algoritmos e Lógica de Programação <span class="code">IAL010</span></td>
+                                <td>TIAGO ANTÔNIO DA SILVA</td>
+                            </tr>
+                            <tr>
+                                <td>Modelagem de Banco de Dados <span class="code">IBD014</span></td>
+                                <td>HÉLIO LUIS DA SILVA RODRIGUES</td>
+                            </tr>
+                            <tr>
+                                <td>Engenharia de Software I <span class="code">IES011</span></td>
+                                <td>APARECIDA MARIA ZEM LOPES</td>
+                            </tr>
+                            <tr>
+                                <td>Sistemas Operacionais e Redes de Computadores <span class="code">ISO011</span></td>
+                                <td>PAULO HENRIQUE BUSCAROLLO</td>
+                            </tr>
+                            <tr>
+                                <td>Desenvolvimento Web I <span class="code">ISW028</span></td>
+                                <td>TIAGO ANTÔNIO DA SILVA</td>
+                            </tr>
+                            <tr>
+                                <td>Design Digital <span class="code">ISW031</span></td>
+                                <td>ANDERSON FERREIRA FERNANDES</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="semester">
+                <div class="semester-header">
+                    <h2>2º Semestre</h2>
+                    <span class="arrow">⮞</span>
+                </div>
+            </div>
+            <div class="semester">
+                <div class="semester-header">
+                    <h2>3º Semestre</h2>
+                    <span class="arrow">⮞</span>
+                </div>
+            </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,210 @@
+@import url('https://fonts.cdnfonts.com/css/garet');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg-color: #eeeeee;
+    --main-color: #03b32e;
+    --second-color: #03a52b;
+    --font-color: #231f20;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    /*background-color: #dddddd;*/
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fafafa;
+    width: 16rem;
+    height: 100vw;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  }
+
+
+  .sidebar-top {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-top .logo {
+    width: 12rem;
+    margin: 0 1.5rem;
+}
+
+.shrink-btn {
+    position: absolute;
+    top: 2rem;
+    height: 27px;
+    padding: 0 0.3rem;
+    cursor: pointer;
+    right: 0;
+    pointer-events: none;
+    transition: 0.3s;
+    font-size: 2rem;
+    opacity: 0;
+    background-color: #fafafa;
+}
+
+.iconSelect {
+    text-align: center;
+    align-content: center;
+}
+
+.iconSelect i {
+  font-size: 8rem;
+  color: var(--font-color);
+  transition: all .3s ease;
+  border: 1px solid var(--font-color);
+  padding: 30px;
+  border-radius: 50%;
+  margin: 15px;
+  cursor: pointer;
+}
+
+.iconSelect i:hover {
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+  cursor: pointer;
+}
+
+.shrink-btn i {
+    line-height: 27px;
+    transition: 0.3s ease;
+}
+
+.shrink-btn i:hover{
+    color: var(--second-color);
+}
+
+nav:hover .shrink-btn,
+.shrink-btn.hovered {
+    transform: translateY(-50%) translateX(0px);
+    opacity: 1;
+    pointer-events: all;
+}
+
+.sidebar-links ul {
+    position: relative;
+}
+
+.sidebar-links li {
+    position: relative;
+    padding: 2.5px 0;
+}
+
+.sidebar-links li:hover {
+  color: var(--main-color);
+}
+
+.sidebar-links a {
+    color: var(--font-color);
+    font-weight: 400;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    height: 53px;
+}
+
+.sidebar-links i {
+  font-size: 2rem;
+  padding: 15px;
+}
+
+
+.sidebar-footer {
+    display: flex;
+    margin-top: 2rem;
+    height: 40vh;
+    padding: 1.3vh;  
+  }
+
+  .teste {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .account {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    color: var(--text-color);
+    height: 53px;
+    width: 3.7rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s 0s, color 0.3s 0s;
+  }
+  
+  .account:hover {
+    color: #fff;
+  }
+  
+  .admin-user {
+    display: flex;
+    align-items: center;
+  }
+  
+  .admin-profile {
+    white-space: nowrap;
+    max-width: 100%;
+    transition: opacity 0.3s 0.2s, max-width 0.7s 0s ease-in-out;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    overflow: hidden;
+  }
+  
+  .admin-user img {
+    width: 2.9rem;
+    border-radius: 50%;
+    margin: 0 0.4rem;
+  }
+  
+  .admin-info {
+    padding-left: 0.3rem;
+  }
+  
+  .admin-info h3 {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1;
+  }
+  
+  .admin-info h5 {
+    font-weight: 400;
+    font-size: 0.75rem;
+    color: var(--text-color);
+    margin-top: 0.3rem;
+    line-height: 1;
+  }
+  
+  .log-out {
+    display: flex;
+    height: 40px;
+    min-width: 2.4rem;
+    background-color: var(--main-color-dark);
+    color: var(--text-color);
+    align-items: center;
+    justify-content: center;
+    font-size: 1.15rem;
+    border-radius: 10px;
+    margin: 0 0.65rem;
+    transition: color 0.3s;
+    padding-left: 2rem;
+  }
+  
+  .log-out:hover {
+    color: var(--main-color);
+  }

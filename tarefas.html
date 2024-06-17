@@ -1,16 +1,25 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/nav.css">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/header.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>GoLearn</title>
 </head>
-
 <body>
+
+    <header>
+        <div class="logo">Minha Logo</div>
+        <div class="search-container">
+            <input type="text" placeholder="Pesquisar...">
+            <button type="submit">🔍</button>
+        </div>
+    </header>
+
+
     <nav>
         <div class="sidebar-top">
             <span class="shrink-btn">
@@ -38,7 +47,7 @@
                     <div class="admin-profile hide">
                         <img src="assets/images/face-1.png" alt="">
                         <div class="admin-info">
-                            <h3>Jorgeeee</h3>
+                            <h3>Jorge</h3>
                             <h5>Professor</h5>
                         </div>
                     </div>
@@ -49,56 +58,5 @@
             </div>
 
     </nav>
-
-    <section class="dashboard">
-
-        <div class="iconSelect">
-            <a href="materiais.html">
-                <i class='bx bx-book-bookmark'></i><Br>
-                Materiais
-            </a>
-        </div>
-
-
-        <div class="iconSelect">
-            <a href="aulas.html">
-                <i class='bx bxs-movie-play'></i><Br>
-                Aulas
-            </a>
-        </div>
-
-
-        <div class="iconSelect">
-            <a href="calendario.html">
-
-                <i class='bx bxs-calendar'></i><Br>
-                Calendário
-
-            </a>
-        </div>
-
-        <div class="iconSelect">
-            <a href="conteudos.html">
-            <i class='bx bx-folder-open'></i><Br>
-            Conteúdos
-            </a>
-        </div>
-
-        <div class="iconSelect">
-            <a href="to-do.html">
-            <i class='bx bxs-comment-check'></i> <Br>
-            </a> To-Do
-        </div>
-
-        <div class="iconSelect">
-            <a href="tarefas.html">
-            <i class='bx bxs-spreadsheet'></i><Br>
-            Tarefas
-            </a>
-        </div>
-    </section>
-
-    <script src="app.js"></script>
 </body>
-
 </html>
